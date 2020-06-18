@@ -1,0 +1,21 @@
+{
+    "name": "fabio/user",
+    "authors": [
+        {
+            "name": "Fabio Alvarenga",
+            "email": "fabio.alvarenga@telecom.inf.br"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\User\\App\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                "Section": "Modules\\User\\App\\Section\\SectionFacade",
+                "SectionGuard": "Modules\\User\\App\\Listeners\\SectionGuardFacade"
+            }
+        }
+    }
+}
