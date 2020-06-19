@@ -6,7 +6,10 @@
             "email": "fabioasilva94@hotmail.com.br"
         }
     ],
-    "require": {},
+    "require": {
+        "spatie/laravel-permission": "^3.13",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
     "autoload": {
         "psr-4": {
             "Modules\\User\\": "./"
