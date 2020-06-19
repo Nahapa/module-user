@@ -11,5 +11,16 @@
         "psr-4": {
             "Modules\\User\\": "./"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\User\\App\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                "Section": "Modules\\User\\App\\Section\\SectionFacade",
+                "SectionGuard": "Modules\\User\\App\\Listeners\\SectionGuardFacade"
+            }
+        }
     }
 }
