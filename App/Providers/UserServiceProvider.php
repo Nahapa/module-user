@@ -38,12 +38,21 @@ class UserServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../../Resources' => resource_path(),
-        ], 'resources');
+            __DIR__.'/../../Resources/Assets' => resource_path('assets/vendor/User'),
+        ], 'assets');
 
         $this->publishes([
-            __DIR__.'/../../Lang' => resource_path('lang/vendor/User'),
+            __DIR__.'/../../Resources/Lang' => resource_path('lang/vendor/User'),
         ], 'lang');
+
+        $this->publishes([
+            __DIR__.'/../../Resources/Views' => resource_path('assets/vendor/User'),
+        ], 'views');
+
+        $this->publishes([
+            __DIR__.'/../../webpack.mix.js' => resource_path(),
+        ], 'views');
+
 
         // $this->publishes([
         //     __DIR__.'/../../Config/sections.php' => config_path('sections.php'),

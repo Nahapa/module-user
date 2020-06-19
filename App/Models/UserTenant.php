@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 namespace Modules\User\App\Models;
 
-use App\Tenant\Uuid;
-use App\Tenant\TenantModels;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Model;
+use Modules\User\App\Tenant\TenantModels;
 
 /**
  * @property User $user

@@ -37,7 +37,7 @@ class UserAdmin extends Model
         return ['admin' => $admin, 'user_tenant' => $userTenant];
     }
 
-    public static function createUser(array $attributes): Admin
+    public static function createUser(array $attributes): UserAdmin
     {
         $admin = self::create([]);
         $admin->users()->create($attributes['user']);
