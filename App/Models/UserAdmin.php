@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @property User $user
  */
-class Admin extends Model
+class UserAdmin extends Model
 {
     use HasRoles;
 

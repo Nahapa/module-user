@@ -26,17 +26,17 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \Modules\Tenant\Models\User::class,
+            'model' => \Modules\User\App\Models\User::class,
         ],
 
         'admins' => [
             'driver' => 'admin_provider',
-            'model' => \Modules\Tenant\Models\User::class,
+            'model' => \Modules\User\App\Models\User::class,
         ],
 
         'tenants' => [
             'driver' => 'tenant_provider',
-            'model' => \Modules\Tenant\Models\User::class,
+            'model' => \Modules\User\App\Models\User::class,
         ]
     ]
 ];

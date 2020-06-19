@@ -5,7 +5,7 @@ return [
         'app' => [
             'login' => [
                 'route_login' => 'app.login',
-                'show_login_form' => 'app.layout.login',
+                'show_login_form' => 'User::app.layout.login',
                 'logged_out' => '/app/login',
                 'guard' => 'app_web',
                 'redirect_login' => 'app.user.index'
@@ -20,7 +20,7 @@ return [
         'admin' => [
             'login' => [
                 'route_login' => 'admin.login',
-                'show_login_form' => 'admin.layout.login',
+                'show_login_form' => 'User::admin.layout.login',
                 'logged_out' => '/admin/login',
                 'guard' => 'admin_web',
                 'redirect_login' => 'admin.user.index'

@@ -22,5 +22,7 @@
                 "SectionGuard": "Modules\\User\\App\\Listeners\\SectionGuardFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

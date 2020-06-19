@@ -11,10 +11,10 @@ use Illuminate\Database\Schema\Blueprint;
 class TenantManager
 {
     private $tenant;
-    private static $tenantTable = 'companies';
-    private static $tenantField = 'company_id';
+    private static $tenantTable = 'tenants';
+    private static $tenantField = 'tenant_id';
     private static $tenantName = 'Empresa';
-    private static $tenantModel = Company::class;
+    private static $tenantModel = Tenant::class;
 
     public function getTenantTable(): string
     {

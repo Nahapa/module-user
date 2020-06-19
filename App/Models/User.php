@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 /**
- * @property Admin $admin
+ * @property UserAdmin $admin
  * @property UserTenant $userTenant
  */
 class User extends Authenticatable
@@ -73,7 +73,7 @@ class User extends Authenticatable
     public static function createAdmin(array $attributes)
     {
         $user = self::create($attributes);
-        $admin = Admin::create([]);
+        $admin = UserAdmin::create([]);
         $user->userable()->associate($admin);
         return $user;
     }
